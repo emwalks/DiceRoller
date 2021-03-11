@@ -1,6 +1,6 @@
 # DiceRoller
 
-<img align="right" src="" alt="appPreview" width="300"/>
+<img align="right" src="https://github.com/emwalks/DiceRoller/blob/main/app/src/main/res/drawable/dice_6.png" alt="appPreview" width="300"/>
 
 App Project 2: Android Basics in Kotlin Course
 
