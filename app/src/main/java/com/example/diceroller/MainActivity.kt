@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         rollResultImageView.setImageResource(drawableResource)
+        rollResultImageView.contentDescription = rollResult.toString()
     }
 }
 
