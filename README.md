@@ -8,5 +8,5 @@ This repo keeps track of my progress following the [Android Basics in Kotlin Cou
 
 Techniques implemented & Learning:
 - adding buttons
-= using tools: text to aid UI development
+- using tools: text to aid UI development
 
