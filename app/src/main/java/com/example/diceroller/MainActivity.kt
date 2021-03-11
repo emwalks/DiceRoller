@@ -27,11 +27,18 @@ class MainActivity : AppCompatActivity() {
         val dice = Dice(6)
         val rollResult: Int = dice.roll()
         val rollResultImageView: ImageView = findViewById(R.id.imageView)
-        rollResultImageView.setImageResource(R.drawable.dice_2)
+
+        when (rollResult) {
+            1 -> rollResultImageView.setImageResource(R.drawable.dice_1)
+            2 -> rollResultImageView.setImageResource(R.drawable.dice_2)
+            3 -> rollResultImageView.setImageResource(R.drawable.dice_3)
+            4 -> rollResultImageView.setImageResource(R.drawable.dice_4)
+            5 -> rollResultImageView.setImageResource(R.drawable.dice_5)
+            6 -> rollResultImageView.setImageResource(R.drawable.dice_6)
+        }
 
     }
 }
-
 
 internal class Dice(private val numberOfSides: Int) {
     fun roll(): Int {
