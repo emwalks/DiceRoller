@@ -12,5 +12,9 @@ Techniques implemented & Learning:
 - using onClickListeners
 - using toasts
 - updating a text view following a button click
+- updating image views based on conditions
+- changing app icon using [Imge Asset Studio](https://developer.android.com/studio/write/image-asset-studio)
+
+
 
 
