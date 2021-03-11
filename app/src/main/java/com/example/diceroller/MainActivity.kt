@@ -18,17 +18,21 @@ class MainActivity : AppCompatActivity() {
             rollButtonClickedToast.show()
              */
 
-            val dice = Dice(6)
-            val rollResult:Int = dice.roll()
+            rollDice()
 
-            val rollResultTextView: TextView = findViewById(R.id.textView)
-            rollResultTextView.text = "${rollResult}"
         }
 
     }
+
+    private fun rollDice() {
+        val dice = Dice(6)
+        val rollResult:Int = dice.roll()
+        val rollResultTextView: TextView = findViewById(R.id.textView)
+        rollResultTextView.text = "${rollResult}"
+    }
 }
 
-internal class  Dice (val numberOfSides: Int) {
+internal class  Dice (private val numberOfSides: Int) {
     fun roll(): Int {
         return (1..numberOfSides).random()
     }
