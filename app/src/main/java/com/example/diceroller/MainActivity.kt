@@ -18,11 +18,18 @@ class MainActivity : AppCompatActivity() {
             rollButtonClickedToast.show()
              */
 
+            val dice = Dice(6)
+            val rollResult:Int = dice.roll()
+
             val rollResultTextView: TextView = findViewById(R.id.textView)
-            var numberOfFaces: IntRange = 1..6
-            var rollResult:Int = numberOfFaces.random()
             rollResultTextView.text = "${rollResult}"
         }
 
+    }
+}
+
+internal class  Dice (val numberOfSides: Int) {
+    fun roll(): Int {
+        return (1..numberOfSides).random()
     }
 }

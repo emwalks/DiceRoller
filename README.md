@@ -11,5 +11,6 @@ Techniques implemented & Learning:
 - using tools: text to aid UI development
 - using onClickListeners
 - using toasts
+- updating a text view following a button click
 
 
