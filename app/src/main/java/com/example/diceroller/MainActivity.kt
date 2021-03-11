@@ -17,10 +17,10 @@ class MainActivity : AppCompatActivity() {
             val rollButtonClickedToast = Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT)
             rollButtonClickedToast.show()
              */
-
             rollDice()
-
         }
+        // Do a dice roll when the app starts
+        rollDice()
     }
 
     private fun rollDice() {
